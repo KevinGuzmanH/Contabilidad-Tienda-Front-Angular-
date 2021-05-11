@@ -1,5 +1,5 @@
-
-<div class="container">
+<div  class="row">
+<div class="col-7 offset-1">
   <div class="card">
     <div class="card-header">
       <h3>Productos</h3>
@@ -22,15 +22,18 @@
               <td>{{producto.valor}}</td>
               <td>{{producto.existencias}}</td>
               <td>{{producto.balance}}</td>
-
               <td>
-                <button (click)="editar(producto)" class="btn btn-light">Editar</button>
-                <button class="btn btn-light">Eliminar</button>
+                <button (click)="editar(producto)" class="btn btn-success">Editar</button>
+                <button (click)="delete(producto.id)" class="btn btn-danger">Eliminar</button>
               </td>
-
             </tr>
         </thead>
       </table>
     </div>
   </div>
+</div>
+<div class="col">
+  <app-infocard></app-infocard>
+</div>
+
 </div>

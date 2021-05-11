@@ -25,4 +25,11 @@ export class ServiceService {
       return this.http.put<Producto> (this.URL + `/updateProduct`, producto);
     }
 
+    deleteProduct(id: number){
+      return this.http.delete<Producto> (this.URL + `/delete/` + id);
+    }
+    getFullBalance(){
+      return this.http.get<number> (this.URL + `/balancetotal`);
+    }
+
 }

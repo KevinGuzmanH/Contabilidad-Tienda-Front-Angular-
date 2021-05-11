@@ -21,4 +21,10 @@ export class ViewListComponent implements OnInit {
     localStorage.setItem('id', JSON.stringify(producto.id));
     this.router.navigate(['edit']);
   }
+  delete(id: number){
+    this.service.deleteProduct(id).subscribe(
+      data => {alert('Product eliminado'); }
+    );
+  }
+
 }

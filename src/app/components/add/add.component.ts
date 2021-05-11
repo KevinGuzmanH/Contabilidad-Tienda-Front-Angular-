@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import {ServiceService} from '../../Service/service.service';
-import {Producto} from "../../Model/Producto";
+import {Producto} from '../../Model/Producto';
 
 @Component({
   selector: 'app-add',
@@ -9,7 +9,7 @@ import {Producto} from "../../Model/Producto";
   styleUrls: ['./add.component.css']
 })
 export class AddComponent implements OnInit {
-   producto: Producto=new Producto();
+   producto: Producto = new Producto();
 
   constructor(private route: Router, private service: ServiceService) { }
 

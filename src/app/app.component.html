@@ -1,17 +1,23 @@
 
 <app-header></app-header>
-
-<div>
-  <hr id="separador">
-  <div class="container">
-  <button (click)="seeList()" class="btn btn-info">See Product List</button>
-  <button (click)="newProduct()" id="newProduct" class="btn btn-info">New Product</button>
+<div id="backgraundrow" class="row">
+  <div  id="buttonsColumn" class="col offset-4">
+    <div id="buttonsContainer">
+      <div class="container">
+        <button (click)="seeList()" class="btn btn-outline-light" data-mdb-ripple-color="dark">See Product List</button>
+        <button (click)="newProduct()" id="newProduct" class="btn btn-outline-light" data-mdb-ripple-color="dark">New Product</button>
+      </div>
+    </div>
   </div>
 </div>
-<div>
-  <div id="tableCont" class="container">
+<hr id="separador" >
+<main>
+<div id="backgraund" class="img-fluid">
+  <div>
     <router-outlet></router-outlet>
   </div>
 </div>
+</main>
 
+<app-footer></app-footer>
 

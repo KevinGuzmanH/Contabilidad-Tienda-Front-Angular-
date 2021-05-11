@@ -1,43 +1,47 @@
-
-<div class="container">
+<div class="row">
+<div class="col-7 offset-1">
   <div class="card">
     <div class="card-header">
       <h3>Abastecer Producto</h3>
     </div>
     <div class="card-body">
-      <div class="form-group col-m-3">
+      <div class="form-group col-10 offset-1">
       <form >
         <label for="idInput">ID</label>
         <input [(ngModel)]="producto.id" [ngModelOptions]="{standalone: true}" class="form-control" type="text" id="idInput">
       </form>
       </div>
-      <div class="form-group col-md-3">
+      <div class="form-group col-10 offset-1">
         <form >
           <label for="nombreInput">NOMBRE</label>
           <input [(ngModel)]="producto.nombre" [ngModelOptions]="{standalone: true}" class="form-control" type="text" id="nombreInput">
         </form>
       </div>
-      <div class="form-group">
+      <div class="form-group col-10 offset-1">
         <form >
           <label for="valorInput">VALOR</label>
           <input [(ngModel)]="producto.valor" [ngModelOptions]="{standalone: true}" class="form-control" type="text" id="valorInput">
         </form>
       </div>
-      <div class="form-group">
+      <div class="form-group col-10 offset-1">
         <form >
           <label for="existInput">EXISTENCIAS</label>
           <input [(ngModel)]="producto.existencias" [ngModelOptions]="{standalone: true}" class="form-control" type="text" id="existInput">
         </form>
       </div>
-      <div class="form-group">
+      <div class="form-group col-10 offset-1">
         <form >
           <label for="abastInput">COSTO DE ABASTECIMIENTO</label>
           <input [(ngModel)]="producto.balance" [ngModelOptions]="{standalone: true}" class="form-control" type="text" id="abastInput">
         </form>
       </div>
       <div id="botonCrear">
-      <button (click)="crear()" class="btn btn-success">Crear</button>
+      <button (click)="crear()" class="btn btn-success btn-sm">Crear</button>
       </div>
     </div>
+  </div>
+</div>
+  <div class="col-4">
+    <app-infocard></app-infocard>
   </div>
 </div>

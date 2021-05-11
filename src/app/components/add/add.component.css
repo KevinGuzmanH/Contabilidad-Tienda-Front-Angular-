@@ -1,7 +1,21 @@
-.btn-success{
-  margin-top: 14px;
-  padding: 10px;
+
+.card-header>h3{
+  margin-left: 46px;
+}
+.card-header{
+  padding: 0;
+}
+.btn-danger{
+  margin-left: 5px;
+}
+tr{
+  text-align: center;
 }
 #botonCrear{
   text-align: center;
+  margin-top: 10px;
+}
+.btn-success{
+  padding-left: 15px;
+  padding-right: 15px;
 }

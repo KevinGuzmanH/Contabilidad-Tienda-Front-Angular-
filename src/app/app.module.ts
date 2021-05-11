@@ -10,6 +10,8 @@ import { EditComponent } from './components/edit/edit.component';
 import { FormsModule } from '@angular/forms';
 import { ServiceService } from './Service/service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './components/footer/footer.component';
+import { InfocardComponent } from './components/infocard/infocard.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     ViewListComponent,
     AddComponent,
     EditComponent,
+    FooterComponent,
+    InfocardComponent,
   ],
   imports: [
     BrowserModule,
