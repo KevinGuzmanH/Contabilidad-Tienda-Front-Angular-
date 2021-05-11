@@ -17,5 +17,8 @@ export class ViewListComponent implements OnInit {
       data => {this.productos = data; }
     );
   }
-
+  editar(producto: Producto){
+    localStorage.setItem('id', JSON.stringify(producto.id));
+    this.router.navigate(['edit']);
+  }
 }

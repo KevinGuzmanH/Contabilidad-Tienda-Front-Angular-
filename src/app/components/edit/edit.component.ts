@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Producto} from "../../Model/Producto";
+import {ServiceService} from "../../Service/service.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-edit',
@@ -6,10 +9,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edit.component.css']
 })
 export class EditComponent implements OnInit {
-
-  constructor() { }
+  producto: Producto = new Producto();
+  constructor(private service: ServiceService, route: Router) { }
 
   ngOnInit(): void {
+    this.obtenerProducto();
   }
+
+  obtenerProducto(){
+    JSON.stringify(localStorage.getItem('id'));
+    let id: number = JSON.parse(localStorage.getItem('id') as string) as number;
+
+    this.service.getById(id).subscribe(
+      data => {
+        this.producto = data;
+      });
+  }
+  actualizar(){
+     this.service.updateProduct(this.producto).subscribe(
+       data => {alert('actualizado'); }
+     );
+  }
+
 
 }
