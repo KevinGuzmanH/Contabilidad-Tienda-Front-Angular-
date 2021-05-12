@@ -18,6 +18,8 @@ export class AppComponent {
     newProduct(){
     this.router.navigate(['add']);
     }
-
+    supplyProduct(){
+     this.router.navigate(['supply']);
+    }
 
 }

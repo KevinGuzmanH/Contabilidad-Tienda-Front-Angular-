@@ -10,7 +10,7 @@ import {Router} from "@angular/router";
 })
 export class EditComponent implements OnInit {
   producto: Producto = new Producto();
-  constructor(private service: ServiceService, route: Router) { }
+  constructor(private service: ServiceService, private route: Router) { }
 
   ngOnInit(): void {
     this.obtenerProducto();
@@ -27,7 +27,7 @@ export class EditComponent implements OnInit {
   }
   actualizar(){
      this.service.updateProduct(this.producto).subscribe(
-       data => {alert('actualizado'); }
+       data => {alert('actualizado'); this.route.navigate(['list']); }
      );
   }
 

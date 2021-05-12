@@ -12,6 +12,7 @@ import { ServiceService } from './Service/service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
 import { InfocardComponent } from './components/infocard/infocard.component';
+import { SupplyComponent } from './components/supply/supply.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { InfocardComponent } from './components/infocard/infocard.component';
     EditComponent,
     FooterComponent,
     InfocardComponent,
+    SupplyComponent,
   ],
   imports: [
     BrowserModule,

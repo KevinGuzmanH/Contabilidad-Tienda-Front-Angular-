@@ -1,8 +1,10 @@
 
-#newProduct{
-  margin-left: 13px;
+#buttonnewProduct,#buttonAbastecer{
+  margin-left: 5px;
 }
-
+#buttonProductList{
+  margin-left: 62px;
+}
 #buttonsContainer{
   margin-left: 45px;
 }
