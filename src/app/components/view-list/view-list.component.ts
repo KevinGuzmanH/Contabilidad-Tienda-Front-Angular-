@@ -23,7 +23,8 @@ export class ViewListComponent implements OnInit {
   }
   delete(id: number){
     this.service.deleteProduct(id).subscribe(
-      data => {alert('Product eliminado'); }
+      data => {alert('Producto eliminado'); window.location.reload();
+      }
     );
   }
 

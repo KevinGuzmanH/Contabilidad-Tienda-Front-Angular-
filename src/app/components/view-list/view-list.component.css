@@ -11,4 +11,7 @@
 tr{
   text-align: center;
 }
+.card-body{
+  background-color: rgb(24,25,26);
+}
 

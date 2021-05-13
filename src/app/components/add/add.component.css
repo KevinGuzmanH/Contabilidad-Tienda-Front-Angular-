@@ -19,3 +19,7 @@ tr{
   padding-left: 15px;
   padding-right: 15px;
 }
+.card-body{
+  background-color: rgb(24,25,26);
+}
+

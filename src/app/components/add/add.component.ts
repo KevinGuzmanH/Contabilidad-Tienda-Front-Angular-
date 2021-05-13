@@ -10,7 +10,7 @@ import {Producto} from '../../Model/Producto';
 })
 export class AddComponent implements OnInit {
    producto: Producto = new Producto();
-
+   vacio = '';
   constructor(private route: Router, private service: ServiceService) { }
 
   ngOnInit(): void {
@@ -20,7 +20,7 @@ export class AddComponent implements OnInit {
   crear(){
     this.service.createProducto(this.producto)
       .subscribe(data => {
-        alert('Abastecido con Exito');
+        alert('Añadido con Exito');
         this.route.navigate(['list']);
       });
   }

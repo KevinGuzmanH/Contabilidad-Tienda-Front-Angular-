@@ -31,6 +31,9 @@ export class ServiceService {
     getFullBalance(){
       return this.http.get<number> (this.URL + `/balancetotal`);
     }
+    getStock(){
+      return this.http.get<number>(this.URL + `/stock`);
+    }
     supplyProduct(producto: Producto, unidades: number, valorunidad: number){
       return this.http.put<Producto>(this.URL + `/supply/` + unidades.toString()  + `/value` + valorunidad.toString(), producto);
     }

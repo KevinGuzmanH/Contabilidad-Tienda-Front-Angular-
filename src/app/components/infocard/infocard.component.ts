@@ -10,11 +10,15 @@ import {Router} from '@angular/router';
 })
 export class InfocardComponent implements OnInit {
   balance: number;
+  existenciasTotales: number;
   constructor(private service: ServiceService, private router: Router) { }
 
   ngOnInit(): void {
     this.service.getFullBalance().subscribe(
       data => {this.balance = data; }
+    );
+    this.service.getStock().subscribe(
+      data => {this.existenciasTotales = data; }
     );
   }
 

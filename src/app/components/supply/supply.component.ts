@@ -26,7 +26,7 @@ export class SupplyComponent implements OnInit {
       data => {this.productos = data; }
     );
   }
-  getprueba(){
+  supplyPdt(){
     var e = (document.getElementById('inputGroupSelect01')) as HTMLSelectElement;
     var sel = parseInt(e.value);
     this.id = sel;
@@ -37,8 +37,5 @@ export class SupplyComponent implements OnInit {
     );
   }
 
-  suply(){
-
-  }
 
 }

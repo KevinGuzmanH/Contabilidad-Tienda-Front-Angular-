@@ -5,3 +5,7 @@
 #input-group{
   margin-bottom: 4px;
 }
+.card-body{
+  background-color: rgb(24,25,26);
+}
+
